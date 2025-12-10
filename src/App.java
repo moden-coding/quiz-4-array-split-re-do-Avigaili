@@ -65,6 +65,20 @@ public class App {
     }
 
     public static int longerWord(String sentence, int size){
-        return -1; //placeholder
+       int count =0;
+       
+         String[] parts = sentence.split(" ");
+         int n = size;
+       for (String word : parts) {
+            if (n < word.length()) {
+                count++;
+
+               
+            } 
+        }
+
+         return count;
+
     }
+
 }
